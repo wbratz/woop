@@ -10,14 +10,7 @@ DECLARE @stmt VARCHAR(MAX)
 DECLARE @dbids TABLE
 ([dbid] int, dbName VARCHAR(32))
 
-CREATE TABLE #temp
-( DBname VARCHAR(32),
- [Table Name] VARCHAR(32),
- [Schema Name] VARCHAR(32),
- [Index Name] VARCHAR(64),
- [Index Type] VARCHAR(32),
- [Frag Percent] VARCHAR(16)
- )
+
 
 INSERT INTO @dbids 
 SELECT database_id, name

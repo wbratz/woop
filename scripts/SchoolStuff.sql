@@ -10,54 +10,10 @@
 -- needs a staging schema
 CREATE SCHEMA staging
 -- needs a loading table for k-12 and one for Colleges
-CREATE TABLE staging.SchoolDataDumpK12 (PreceedingName VARCHAR(100)
-							 , [State] VARCHAR(100)
-							 , County VARCHAR(100)
-							 , City VARCHAR(100)
-							 , ReportingDistrictName VARCHAR(MAX)
-							 , SchoolPop INT, Notes VARCHAR(MAX)
-							 , FirstDay DATE
-							 , MidFallBreakStart DATE
-							 , MidFallBreakEnd DATE
-							 , ThanksgivingStart DATE
-							 , ThanksgivingEnd DATE
-							 , WinterBreakStart DATE
-							 , WinterBreakEnd DATE
-							 , MidWinterBreakStart DATE
-							 , MidWinterBreakEnd DATE
-							 , SpringBreakStart DATE
-							 , SpringBreakEnd DATE
-							 , LastDay DATE
-							 , ExtraBreakStart DATE
-							 , ExtraBreakEnd DATE
-							 , ExtraBreak1Start DATE
-							 , ExtraBreak1End DATE
-							 )
+
 
 -- College Table
-CREATE TABLE staging.SchoolDataDumpColl (PreceedingName VARCHAR(100)
-							 , [State] VARCHAR(100)
-							 , CollegeUniversity VARCHAR(MAX)
-							 , City VARCHAR(100)
-							 , [Population] INT
-							 , Notes VARCHAR(MAX)
-							 , FirstDay DATE
-							 , MidFallBreakStart DATE
-							 , MidFallBreakEnd DATE
-							 , ThanksgivingStart DATE
-							 , ThanksgivingEnd DATE
-							 , WinterBreakStart DATE
-							 , WinterBreakEnd DATE
-							 , MidWinterBreakStart DATE
-							 , MidWinterBreakEnd DATE
-							 , SpringBreakStart DATE
-							 , SpringBreakEnd DATE
-							 , LastDay DATE
-							 , ExtraBreakStart DATE
-							 , ExtraBreakEnd DATE
-							 , ExtraBreak1Start DATE
-							 , ExtraBreak1End DATE
-							 )
+
 
 
 -- Execute SSIS Package to dump Data
