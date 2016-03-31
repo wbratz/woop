@@ -1,4 +1,11 @@
--- Create school load scrip
+----------------------------------------------------------------------------------------------
+-- AUTHOR: William Bratz
+-- Date: 03/08/16
+----------------------------------------------------------------------------------------------
+
+
+
+-- Create school load script
 
 -- needs a staging schema
 CREATE SCHEMA staging
