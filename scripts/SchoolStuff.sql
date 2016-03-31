@@ -101,9 +101,7 @@ ORDER BY state, county, city, base
 */
 
 -- I don't have a dates table so I might as well create one, wonder how long this will take
-CREATE SCHEMA dim
 
-CREATE TABLE dim.dateNoTime (ID INT IDENTITY (1,1) PRIMARY KEY, [Date] DATE)
 
 -- Loopy add 1
 DECLARE @dt date
