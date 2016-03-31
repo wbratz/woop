@@ -120,8 +120,8 @@ END
 
 -- That took ....34 seconds pretty cool
 -- Don't want double dates
-CREATE UNIQUE INDEX UQ_INDEX0 ON dim.dateNoTime ([Date]) WITH IGNORE_DUP_KEY
-CREATE NONCLUSTERED INDEX IX_Index0 ON dim.dateNoTime (ID) INCLUDE (DATE)
+--CREATE UNIQUE INDEX UQ_INDEX0 ON dim.dateNoTime ([Date]) WITH IGNORE_DUP_KEY
+--CREATE NONCLUSTERED INDEX IX_Index0 ON dim.dateNoTime (ID) INCLUDE (DATE)
 
 -- Keeping track of breaks
 /* 
